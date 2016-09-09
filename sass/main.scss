@@ -1,0 +1,1439 @@
+/*
+SASS
+*/
+
+
+/* IMPORT */
+
+@import "_variables.scss";
+@import "_mixin.scss";
+@import "_font-awesome.min.scss";
+
+/* BASIC CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+
+/* HEADER */
+
+#header {
+    background-image: url("../images/image_1.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+#heading {
+    margin-top: 0;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @media #{$tablet} {
+        font-size: 48px;
+    }
+    @media #{$laptop} {
+        font-size: 68px;
+    }
+}
+
+#headingPart {
+    color: rgb(159, 68, 155);
+}
+
+#secondHeading {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 0.5em;
+    @media #{$tablet} {
+        font-size: 30px;
+    }
+    @media #{$laptop} {
+        font-size: 35px;
+    }
+}
+
+#thirdHeading {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px;
+    @media #{$tablet} {
+        font-size: 18px;
+    }
+    @media #{$laptop} {
+        font-size: 20px;
+    }
+}
+
+#plaster {
+    background-image: url("../images/plaster.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 167px;
+    width: 181px;
+    @media #{$phone} {
+        margin: 0 auto;
+    }
+}
+
+#firstMainIcons,
+#secondMainIcons {
+    @media #{$phone} {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @media #{$tablet} {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @media #{$laptop} {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-around;
+        height: 50vh;
+        #mainIcons1,
+        #mainIcons10,
+        #mainIcons2,
+        #mainIcons5,
+        #mainIcons6,
+        #mainIcons9 {
+            align-self: flex-end;
+        }
+    }
+}
+
+.icons_1 {
+    position: relative;
+    @media #{$phone} {
+        position: relative;
+    }
+}
+
+#plaster:hover {
+    background-image: url("../images/fiolet.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.firstIcons {
+    position: absolute;
+    left: 64px;
+    top: 43px;
+    @media #{$phone} {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 43px;
+        margin: 0 auto;
+        width: 60px;
+    }
+}
+
+#events,
+#facebook,
+#history,
+#instagram,
+#statistics,
+#twitter {
+    font-size: 58px;
+    color: white;
+}
+
+#iconText1,
+#iconText10,
+#iconText11,
+#iconText12,
+#iconText2,
+#iconText3,
+#iconText4,
+#iconText5,
+#iconText6,
+#iconText7,
+#iconText8,
+#iconText9 {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    @media #{$phone} {
+        top: 116px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    @media #{$tablet} {
+        top: 116px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+    @media #{$laptop} {
+        top: 116px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#scroll1 {
+    position: relative;
+}
+
+#scroll2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 17px;
+}
+
+#scroll:hover {
+    background-image: url("../images/fiolet2.png");
+}
+
+#scroll {
+    display: block;
+    margin: 0 auto;
+}
+
+.scroll_1 {
+    display: block;
+    margin: 0 auto;
+}
+
+#scroller {
+    margin-top: 24px;
+    padding-bottom: 24px;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+
+/* MENU */
+
+.menu {
+    @media #{$microphone} {
+        padding-top: 10px;
+        height: 100px !important;
+    }
+    @media #{$phone} {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 60px;
+    }
+}
+
+#logo1 {
+    @media #{$tablet} {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @media #{$laptop} {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+#firstLogo {
+    color: rgb(103, 103, 103);
+    @media #{$phone} {
+        font-size: 20px;
+    }
+    @media #{$tablet} {
+        font-size: 25px;
+    }
+    @media #{$laptop} {
+        font-size: 30px;
+    }
+}
+
+#menuLogo {
+    @media #{$phone} {
+        width: 100%;
+        display: block;
+    }
+    @media #{$tablet} {
+        width: 200px;
+        display: inline-block;
+    }
+    @media #{$laptop} {
+        width: 300px;
+        display: inline-block;
+    }
+}
+
+#firstLogoPart {
+    color: rgb(159, 68, 155);
+}
+
+#navContainer ul li {
+    float: left;
+    padding-right: 10px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+#navContainer {
+    margin: 0;
+    float: right;
+    @media #{$phone} {
+        margin: 0;
+        float: left;
+        padding-bottom: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: rgb(103, 103, 103);
+    font-weight: 500;
+    @media #{$phone} {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    @media #{$tablet} {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    @media #{$laptop} {
+        font-size: 20px;
+        line-height: 44px;
+    }
+}
+
+a:hover {
+    color: rgb(159, 68, 155);
+}
+
+
+/* SECOND SECTION */
+
+#secondSection {
+    background-color: rgb(238, 238, 238);
+    height: 100% auto;
+}
+
+#together {
+    @media #{$phone} {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @media #{$tablet} {
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @media #{$laptop} {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.secondIcons {
+    @media #{$phone} {
+        width: 100%;
+        display: block;
+    }
+    @media #{$tablet} {
+        width: 50%;
+        display: inline-block;
+    }
+    @media #{$laptop} {
+        display: inline-block;
+        width: 20%;
+    }
+}
+
+.icons_2 {
+    @media #{$phone} {
+        position: relative;
+        height: 238px;
+    }
+    @media #{$tablet} {
+        position: relative;
+    }
+    @media #{$laptop} {
+        position: relative;
+    }
+}
+
+.plaster2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30px;
+    margin: 0 auto;
+    background-image: url('../images/plaster2.png');
+}
+
+.fillerIcons {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 88px;
+    margin: 0 auto;
+}
+
+.filler {
+    @media #{$phone} {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    @media #{$tablet} {
+        width: 100%;
+        margin-top: 250px;
+        padding-bottom: 30px;
+    }
+    @media #{$laptop} {
+        width: 100%;
+        margin-top: 250px;
+        padding-bottom: 30px;
+    }
+}
+
+.headingSecondSection {
+    @media #{$phone} {
+        text-align: center;
+        font-size: 16px;
+    }
+    @media #{$tablet} {
+        text-align: center;
+        font-size: 20px;
+        color: rgb(103, 103, 103);
+    }
+    @media #{$laptop} {
+        text-align: center;
+        font-size: 24px;
+        color: rgb(103, 103, 103);
+    }
+}
+
+.textSecondSection {
+    @media #{$phone} {
+        text-align: center;
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    @media #{$tablet} {
+        text-align: center;
+        font-size: 14px;
+        color: rgb(103, 103, 103);
+    }
+    @media #{$laptop} {
+        text-align: center;
+        font-size: 16px;
+        color: rgb(103, 103, 103);
+    }
+}
+
+
+/* THIRD SECTION */
+
+.startingText {
+    @media #{$phone} {
+        height: 84px;
+        width: 236px;
+        margin: 0 auto;
+        line-height: 84px;
+        position: relative;
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+    @media #{$tablet} {
+        height: 100px;
+        width: 252px;
+        margin: 0 auto;
+        line-height: 100px;
+        position: relative;
+        margin-top: 112px;
+        margin-bottom: 112px;
+    }
+    @media #{$laptop} {
+        height: 116px;
+        width: 268px;
+        margin: 0 auto;
+        line-height: 116px;
+        position: relative;
+        margin-top: 128px;
+        margin-bottom: 128px;
+    }
+}
+
+.startText1 {
+    @media #{$phone} {
+        color: rgb(103, 103, 103);
+        font-size: 28px;
+        text-align: center;
+        position: absolute;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    @media #{$tablet} {
+        color: rgb(103, 103, 103);
+        font-size: 38px;
+        text-align: center;
+        position: absolute;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    @media #{$laptop} {
+        color: rgb(103, 103, 103);
+        font-size: 48px;
+        text-align: center;
+        position: absolute;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.startText2 {
+    color: rgb(159, 68, 155);
+    @media #{$phone} {
+        font-size: 28px;
+    }
+    @media #{$tablet} {
+        font-size: 38px;
+    }
+    @media #{$laptop} {
+        font-size: 48px;
+    }
+}
+
+.sign1 {
+    height: 30px;
+    width: 30px;
+    border-left: 2px solid rgb(159, 68, 155);
+    border-bottom: 2px solid rgb(159, 68, 155);
+    position: absolute;
+    bottom: 0;
+}
+
+.sign2 {
+    height: 30px;
+    width: 30px;
+    border-right: 2px solid rgb(159, 68, 155);
+    border-top: 2px solid rgb(159, 68, 155);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#allItem {
+    @media #{$phone} {
+        display: inline-block;
+        width: 100%;
+    }
+    @media #{$tablet} {
+        display: block;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    @media #{$laptop} {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 236px;
+    }
+}
+
+#electronics {
+    @media #{$phone} {
+        max-width: 100% !important;
+        height: auto;
+        display: block;
+        padding-bottom: 20px;
+    }
+    @media #{$tablet} {
+        max-width: 100% !important;
+        height: auto;
+        display: block;
+        padding-bottom: 30px;
+    }
+    @media #{$laptop} {
+        width: 653px;
+        height: 452px;
+        margin-right: 34px;
+    }
+}
+
+#text3 {
+    @media #{$phone} {
+        font-size: 12px;
+        color: rgb(103, 103, 103);
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+    @media #{$tablet} {
+        font-size: 14px;
+        color: rgb(103, 103, 103);
+        margin-bottom: 30px;
+        line-height: 30px;
+    }
+    @media #{$laptop} {
+        font-size: 16px;
+        color: rgb(103, 103, 103);
+        margin-bottom: 124px;
+        line-height: 40px;
+    }
+}
+
+#learnMore {
+    background-color: rgb(159, 68, 155);
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    @media #{$phone} {
+        font-size: 16px;
+        margin-bottom: 30px;
+        padding: 10px;
+    }
+    @media #{$tablet} {
+        font-size: 18px;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+    @media #{$laptop} {
+        font-size: 20px;
+        padding: 20px;
+    }
+}
+
+
+/* FOURTH SECTION */
+
+#fourthSection,
+#seventhSection {
+    background-image: url("../images/image_2.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+
+#student {
+    display: block;
+    margin: 0 auto;
+    @media #{$phone} {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    @media #{$tablet} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    @media #{$laptop} {
+        padding-top: 152px;
+        padding-bottom: 62px;
+    }
+}
+
+#text4Section {
+    color: white;
+    text-align: center;
+    @media #{$phone} {
+        font-size: 28px;
+        padding-bottom: 50px;
+    }
+    @media #{$tablet} {
+        font-size: 38px;
+        padding-bottom: 80px;
+    }
+    @media #{$laptop} {
+        font-size: 48px;
+        padding-bottom: 188px;
+    }
+}
+
+
+/* FIFTH SECTION */
+
+#buttons {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#slider {
+    overflow: hidden;
+    height: 459px;
+    margin: 0 auto;
+    @media #{$phone} {
+        width: 250px;
+    }
+    @media #{$tablet} {
+        width: 700px;
+    }
+    @media #{$laptop} {
+        width: 1050px;
+    }
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 459px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 250px;
+    height: 459px;
+    @media #{$phone} {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media #{$tablet} {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    @media #{$laptop} {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+.person {
+    width: 250px;
+    text-align: center;
+}
+
+.photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: rgb(205, 205, 205);
+    margin-bottom: 50px;
+}
+
+.name {
+    color: rgb(72, 72, 72);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+.work {
+    color: rgb(119, 119, 119);
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 34px;
+}
+
+#facebook {
+    margin-right: 28px;
+}
+
+#facebook:hover {
+    background-image: url('../images/kolo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#google:hover {
+    background-image: url('../images/kolo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+/* SIXTH SECTION */
+
+.graph {
+    height: 64px;
+    margin-bottom: 52px;
+    @media #{$phone} {
+        width: 100%;
+    }
+    @media #{$tablet} {
+        width: 320px;
+    }
+    @media #{$laptop} {
+        width: 420px;
+    }
+}
+
+.graphText {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    @media #{$phone} {
+        width: 100%;
+    }
+    @media #{$tablet} {
+        width: 320px;
+    }
+    @media #{$laptop} {
+        width: 420px;
+    }
+}
+
+.tittle {
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    width: 50%;
+    @media #{$phone} {
+        font-size: 15px;
+    }
+    @media #{$tablet} {
+        font-size: 19px;
+    }
+    @media #{$laptop} {
+        font-size: 23px;
+    }
+}
+
+.percent {
+    font-size: 23px;
+    color: rgb(119, 119, 119);
+    width: 50%;
+    text-align: right;
+}
+
+.background {
+    height: 20px;
+    background-color: rgb(240, 240, 240);
+    @media #{$phone} {
+        width: 100%;
+    }
+    @media #{$tablet} {
+        width: 320px;
+    }
+    @media #{$laptop} {
+        width: 420px;
+    }
+}
+
+.grow {
+    height: 20px;
+    background-color: rgb(159, 68, 155);
+}
+
+#grow90 {
+    width: 0;
+}
+
+#grow75 {
+    width: 0%;
+}
+
+#grow70 {
+    width: 0%;
+}
+
+#grow85 {
+    width: 0%;
+}
+
+#diagrams {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* SEVENTH SECTION */
+
+// Look at /* FOURTH SECTION */ from 638 line to 682 line
+
+/* EIGHTH SECTION */
+
+#eighthSection {
+    background-color: rgb(238, 238, 238)
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.number {
+    text-align: center;
+    @media #{$phone} {
+        width: 100%;
+    }
+    @media #{$tablet} {
+        width: 40%;
+    }
+    @media #{$laptop} {
+        width: 25%;
+    }
+}
+
+.eighthText {
+    color: rgb(34, 34, 34);
+    font-size: 64px;
+    margin-top: 164px;
+    margin-bottom: 18px;
+}
+
+.lorem {
+    color: rgb(119, 119, 119);
+    font-size: 16px;
+}
+
+
+/* NINTH SECTION */
+
+#ninthSection {
+    background-color: rgb(238, 238, 238);
+}
+
+.slider2 {
+    margin-top: 150px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    background-color: rgb(170, 170, 170);
+    margin: 0 auto;
+}
+
+.text1NinthSection {
+    font-size: 34px;
+    color: rgb(75, 75, 75);
+    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.text2NinthSection {
+    font-size: 20px;
+    color: rgb(119, 119, 119);
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.bx-controls {
+    padding-bottom: 104px;
+}
+
+
+/* TENTH SECTION */
+
+.newStartingText {
+    @media #{$phone} {
+        height: 84px;
+        width: 200px;
+        margin: 0 auto;
+        line-height: 84px;
+        position: relative;
+        margin-top: 66px;
+        margin-bottom: 52px;
+    }
+    @media #{$tablet} {
+        height: 100px;
+        width: 300px;
+        margin: 0 auto;
+        line-height: 100px;
+        position: relative;
+        margin-top: 82px;
+        margin-bottom: 68px;
+    }
+    @media #{$laptop} {
+        height: 116px;
+        width: 350px;
+        margin: 0 auto;
+        line-height: 116px;
+        position: relative;
+        margin-top: 98px;
+        margin-bottom: 84px;
+    }
+}
+
+#tenSectionButton {
+    display: flex;
+    justify-content: center;
+    //    flex-wrap: wrap;
+}
+
+.textButton {
+    text-align: center;
+}
+
+.fourButtons {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    @media #{$phone} {
+        font-size: 14px;
+        width: 54px;
+        height: 38px;
+        margin: 0 5px 68px 5px;
+    }
+    @media #{$tablet} {
+        font-size: 16px;
+        width: 60px;
+        height: 38px;
+        margin: 0 5px 68px 5px;
+    }
+    @media #{$laptop} {
+        font-size: 18px;
+        width: 90px;
+        height: 38px;
+        margin: 0 5px 68px 5px;
+    }
+}
+
+#photosFirstPart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.photosTenthSection {
+    @media #{$phone} {
+        width: 200px;
+        height: 200px;
+        display: block;
+        padding-bottom: 20px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media #{$tablet} {
+        width: 300px;
+        ;
+        height: 300px;
+        padding-bottom: 30px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media #{$laptop} {
+        width: 360px;
+        height: 360px;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+#photo1 {
+    background-image: url('../images/galeria_1.png');
+}
+
+#photo2 {
+    background-image: url('../images/galeria_2.png');
+}
+
+#photo3 {
+    background-image: url('../images/galeria_3.png');
+}
+
+#photo4 {
+    background-image: url('../images/galeria_4.png');
+}
+
+#photo5 {
+    background-image: url('../images/galeria_5.png');
+}
+
+#photo6 {
+    background-image: url('../images/galeria_6.png');
+}
+
+#photo7 {
+    background-image: url('../images/galeria_7.png');
+}
+
+#photo8 {
+    background-image: url('../images/galeria_8.png');
+}
+
+#photo9 {
+    background-image: url('../images/galeria_9.png');
+}
+
+#photo10 {
+    background-image: url('../images/galeria_10.png');
+}
+
+#photo11 {
+    background-image: url('../images/galeria_11.png');
+}
+
+#photo12 {
+    background-image: url('../images/galeria_12.png');
+}
+
+.gallery {
+    margin-bottom: 36px;
+    @media #{$phone} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.firstDescription {
+    color: rgb(34, 34, 34);
+    @media #{$phone} {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 26px;
+        width: 100%;
+    }
+    @media #{$tablet} {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 26px;
+    }
+    @media #{$laptop} {
+        font-size: 24px;
+        text-align: center;
+        margin-top: 26px;
+    }
+}
+
+.secondDescription {
+    color: rgb(119, 119, 119);
+    font-size: 17px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+#buttonWatchMore {
+    text-align: center;
+}
+
+#watchMore {
+    color: white;
+    background-color: rgb(159, 68, 155);
+    padding: 30px 58px 30px 58px;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.colorViolet {
+    background-color: rgb(159, 68, 155);
+    color: white;
+}
+
+
+/* ELEVENTH SECTION */
+
+#allFormElement {
+    @media #{$phone} {
+        display: inline-block;
+        justify-content: center;
+        max-width: 100%;
+    }
+    @media #{$tablet} {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+    @media #{$laptop} {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+#yourName,
+#email {
+    color: rgb(34, 34, 34);
+    @media #{$phone} {
+        width: 100%;
+        height: 36px;
+        font-size: 12px;
+        margin-bottom: 24px;
+        padding-left: 10px;
+    }
+    @media #{$tablet} {
+        width: 50vw;
+        height: 40px;
+        font-size: 17px;
+        padding-left: 20px;
+        margin-bottom: 30px;
+    }
+    @media #{$laptop} {
+        width: 526px;
+        height: 74px;
+        font-size: 23px;
+        margin-bottom: 40px;
+        padding-left: 30px;
+    }
+}
+
+#message {
+    color: rgb(34, 34, 34);
+    @media #{$phone} {
+        width: 100%;
+        height: 116px;
+        font-size: 12px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-top: 12px;
+    }
+    @media #{$tablet} {
+        width: 50vw;
+        height: 200px;
+        font-size: 17px;
+        margin-bottom: 20px;
+        padding-left: 20px;
+        padding-top: 26px;
+    }
+    @media #{$laptop} {
+        width: 526px;
+        height: 284px;
+        font-size: 23px;
+        margin-bottom: 40px;
+        padding-left: 30px;
+        padding-top: 26px;
+    }
+}
+
+#sendEmailButton {
+    @media #{$phone} {
+        text-align: center;
+    }
+}
+
+#sendEmail {
+    @media #{$phone} {
+        width: 130px;
+        height: 52px;
+        background-color: rgb(159, 68, 155);
+        color: white;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    @media #{$tablet} {
+        width: 190px;
+        height: 70px;
+        background-color: rgb(159, 68, 155);
+        color: white;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 20px;
+    }
+    @media #{$laptop} {
+        width: 228px;
+        height: 76px;
+        background-color: rgb(159, 68, 155);
+        color: white;
+        border-radius: 10px 10px 10px 10px;
+        font-size: 20px;
+    }
+}
+
+#formText {
+    @media #{$phone} {
+        width: 100%;
+    }
+    @media #{$tablet} {
+        width: 40vw;
+    }
+    @media #{$laptop} {
+        margin-left: 74px;
+        width: 520px;
+        height: 512px;
+    }
+}
+
+#formText1 {
+    @media #{$phone} {
+        font-size: 12px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    @media #{$tablet} {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    @media #{$laptop} {
+        font-size: 20px;
+        margin-bottom: 64px;
+    }
+}
+
+#formText2 {
+    @media #{$phone} {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    @media #{$tablet} {
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
+    @media #{$laptop} {
+        font-size: 26px;
+        font-weight: 300;
+        margin-bottom: 54px;
+    }
+}
+
+#formText3 {
+    @media #{$phone} {
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    @media #{$tablet} {
+        font-size: 22px;
+        font-weight: 300;
+        margin-bottom: 76px;
+    }
+    @media #{$laptop} {
+        font-size: 26px;
+        font-weight: 300;
+        margin-bottom: 100px;
+    }
+}
+
+#formIconsPart {
+    @media #{$phone} {
+        display: block;
+        text-align: center;
+    }
+    @media #{$tablet} {
+        display: flex;
+    }
+    @media #{$laptop} {
+        display: flex;
+    }
+}
+
+.formIcons {
+    @media #{$phone} {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    @media #{$tablet} {
+        margin-right: 10px;
+        ;
+    }
+    @media #{$laptop} {
+        margin-right: 36px;
+    }
+}
+
+#form1 {
+    background-image: url('../images/formIcon1.png');
+    width: 79px;
+    height: 78px;
+}
+
+#form2 {
+    background-image: url('../images/formIcon2.png');
+    width: 79px;
+    height: 78px;
+}
+
+#form3 {
+    background-image: url('../images/formIcon3.png');
+    width: 79px;
+    height: 78px;
+}
+
+.formIcons {
+    @media #{$phone} {
+        margin-bottom: 10px;
+    }
+}
+
+#form1:hover {
+    background-image: url('../images/form1v.png');
+}
+
+#form2:hover {
+    background-image: url('../images/form2v.png');
+}
+
+#form3:hover {
+    background-image: url('../images/form3v.png');
+}
+
+#footerLogo {
+    color: rgb(103, 103, 103);
+    text-align: center;
+    @media #{$phone} {
+        font-size: 28px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    @media #{$tablet} {
+        font-size: 38px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    @media #{$laptop} {
+        font-size: 48px;
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+}
+
+#footerLogoPart {
+    color: rgb(159, 68, 155);
+    @media #{$phone} {
+        font-size: 28px;
+    }
+    @media #{$tablet} {
+        font-size: 38px;
+    }
+    @media #{$laptop} {
+        font-size: 48px;
+    }
+}
